@@ -1,0 +1,31 @@
+<view>
+  <view class="backdrop">
+    <view style="height:{{menu_button_top}}px;"></view>
+    <text class="title">人脸信息采集</text>
+    <view style="height:5px;"></view>
+  </view>
+  <view class="content">
+    <view class="centre">
+      <image src="/icon/user_face2.png" />
+    </view>
+    <view class="txt_class">
+      <text class="txt_1">完成人脸录入   实现无感进站</text>
+    </view>
+    <view class="txt_class">
+      <text class="txt_2">请平视摄像头，保持合适距离</text>
+    </view>
+    <view class="txt_class">
+      <text class="txt_3">确保为本人操作</text>
+    </view>
+
+    <view class="txt_class">
+      <button class="next" bindtap="if_photo">拍照</button>
+    </view>
+    <view class="weui-btn-area">
+        <button class="next_1" bindtap="openConfirm">稍后再说</button>
+    </view>
+  </view>
+  <mp-dialog title="提示" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+        <view>若放弃录入人脸信息，其他功能将无法使用。</view>
+  </mp-dialog>
+</view>

@@ -1,0 +1,83 @@
+
+<view>
+    <view class="info">
+        <view class="head_img" bindtap="alter_top_value_two">
+            <image src="{{home_back_url}}" />
+        </view>
+
+        <view class="metting_info" style="top:{{top}}vh">
+            <view class="head" bindtap="alter_top_value">
+                <view class="title"></view>
+            </view>
+
+            <view class="bd3">
+                <view class="mod6"></view>
+                <text lines="1" class="word4">行业资讯</text>
+            </view>
+
+            <view class="swiper_v1">
+                <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperChange">
+                    <block wx:for="{{imgUrls}}">
+                        <swiper-item>
+                            <image src="{{item}}" class="slide-image" bindtap="swipclick_1"/>
+                        </swiper-item>
+                    </block>
+                </swiper>
+            </view>
+            <viex class="swiper_text">
+                <text bindtap="swipclick_1">{{title}}</text>
+            </viex>
+
+            <view class="bd3">
+                <view class="mod6"></view>
+                <text lines="1" class="word4">会议信息</text>
+            </view>
+            
+            <view class="bd4" wx:for="{{meeting_info}}" wx:for-item="data">
+                <view class="wrap1">
+                    <view class="block1" bindtap="metting_info" data-meeting='{{data}}'>
+                        <image src='{{data.meeting_img}}' class="pic1" mode="widthFix"></image>
+                    </view>
+                    <view class="block2">
+                        <text lines="1" class="paragraph2" bindtap="metting_info" data-meeting='{{data}}'>{{data.meeting_name}}</text>
+                        <view class="main1" bindtap="metting_info" data-meeting='{{data}}'>
+                            <image src="../../icon/time.png" class="label2"></image>
+                            <text lines="1" class="word5">{{data.meeting_time}}</text>
+                        </view>
+                        <view class="main2" bindtap="metting_info" data-meeting='{{data}}'>
+                            <image src="../../icon/in.png" class="icon1"></image>
+                            <text lines="2" class="txt2">{{data.meeting_site}}</text>
+                        </view>
+                        <wxs module="m1">
+                            var in_meeting_list = function(meeting_id_list,data_id,meeting_time){
+                                if(meeting_time=='已结束'){
+                                    return '会议过期'
+                                }if(meeting_id_list.indexOf(data_id)==-1){
+                                    return '立即预约'
+                                }else{
+                                    return '预约成功'
+                                }
+                            }
+                        module.exports.in_meeting_list = in_meeting_list;
+                        </wxs>
+                        <block wx:if="{{m1.in_meeting_list(meeting_id_list,data.id,data.meeting_time)=='立即预约'}}">
+                            <view class="main3">
+                                <text lines="1" class="info2" bindtap="subscribe_meeting" data-meetingid='{{data.id}}'>{{m1.in_meeting_list(meeting_id_list,data.id,data.meeting_time)}}</text>
+                            </view>
+                        </block>
+                        <block wx:else>
+                            <view class="main3">
+                                <text lines="1" class="info2">{{m1.in_meeting_list(meeting_id_list,data.id,data.meeting_time)}}</text>
+                            </view>
+                        </block>
+                    </view>
+                </view>
+            </view>
+            <!-- <view class='info' style="height:35px;">
+                <view class='info3'>
+                    <text>查看更多</text>
+                </view>
+            </view> -->
+        </view>
+    </view>
+</view>

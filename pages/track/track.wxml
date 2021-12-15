@@ -1,0 +1,24 @@
+<!--pages/track/track.wxml-->
+<view class="section">
+<!-- <scroll-view scroll-x="true" style="height: 1500px">
+  <movable-area class="img" style="height: 1500px; width: 1500px; background: black;" scale-area> 
+    <movable-view  style="height: 1000px; width: 1000px; background: black;" direction="all" scale scale-min="0.1" scale-max="10" scale-value="0.1" y="100px"  out-of-bounds>
+      <image class='img' style="height: 1000px; width: 1000px;" src="{{track_map_url}}"></image> 
+    </movable-view>
+  </movable-area>
+</scroll-view> -->
+
+<!-- <image class='img' style="height: 500px; width: {{weinWidth}}px;" src="{{track_map_url}}"></image>  -->
+<canvas canvas-id='canvas' style='width:{{weinWidth}}px;height:{{windowH}}px'>
+</canvas>
+
+</view>
+<view class="message">
+  <text class="message_red">红色线路：主要参观路线 \n</text>
+  <text class="message_green">绿色线路：简单参观路线 \n</text>
+  <text class="message_blue">蓝色线路：测试参观路线 \n</text>
+  <text class="message_text">所在区域：{{visitor_location_value}} \n</text>
+</view>
+<view class="map_image">
+  <image class="user_image" src="{{imgList[0]}}" bindtap="preview" data-src="{{imgList[0]}}"></image>
+</view>

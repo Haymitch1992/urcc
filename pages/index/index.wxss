@@ -1,0 +1,100 @@
+/**index.wxss**/
+
+.userinfo {
+  position:fixed; 
+	margin:auto;
+	left:0;
+	right:0;
+  top: 35%;
+	bottom:10px;
+	width:600rpx;
+	text-align:center;
+  filter:alpha(Opacity=100);
+}
+
+.background{
+  height: 220rpx;
+  display:flex;
+  justify-content: center;        
+  align-items:center;
+  border-radius: 30px;  
+  width: 100%;
+}
+
+.background button {
+  width: 204px;
+  height: 51px;
+  background: #F74F9E;
+  border-radius: 9px;
+  display:flex;
+  justify-content: center;        
+  align-items:center;
+}
+
+.login_text{
+  font-size: 17px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 48rpx;
+  letter-spacing: 2rpx;
+}
+
+.tourist{
+  color:#fff;
+  width: 204px;
+  height: 51px;
+  background: #0920D0;
+  border-radius: 9px;
+  display:flex;
+  justify-content: center;        
+  align-items:center;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.backdrop {
+  width: 100%;
+  height: 250rpx;
+  background:darkorange;
+  box-shadow: 0rpx 10rpx 50rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+.base{
+  height: 80rpx;
+  width: 100%;
+  background-color:darkorange;
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0rpx 10rpx 50rpx 10rpx rgba(0, 0, 0, 0.1);
+  }
+
+.middle{
+  position:relative;
+}
+
+.img_1{
+  height: 530rpx;
+  width: 100%;
+}
+
+.base_1{
+  height: 600rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  
+}
+.userinfo-nickname{
+  color: rgb(0, 0, 0);
+}

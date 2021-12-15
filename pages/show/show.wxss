@@ -1,0 +1,53 @@
+/* pages/show/show.wxss */
+
+.page {
+    background-color: #F5F5F5;
+    min-height: 100vh;
+}
+
+.backdrop {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.title {
+    font-size: 38rpx;
+    font-weight: 1000;
+    line-height: 64rpx;
+    color: rgb(0, 0, 0);
+    display:flex;
+    justify-content:center;
+}
+
+.chuck{
+    background-color: #fffdfd;
+    margin: 35rpx;
+    border-radius: 40rpx;
+}
+
+.chuck image{
+    width: 100%;
+    border-radius: 40rpx 40rpx 0 0;
+}
+
+.chunk_content{
+    margin: 20rpx;
+}
+
+.chunk_content title{
+    font-size: 20px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: bold;
+    color: #030303;
+    line-height: 42px;
+}
+
+.chunk_content_1{
+    margin: 20rpx;
+}
+
+.chunk_content_1 text{
+    font-weight: 300;
+    line-height: 3px;
+    font-size: 18px;
+}

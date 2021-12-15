@@ -1,0 +1,96 @@
+<view class="page">
+  <view class="backdrop">
+    <view style="height:{{menu_button_top}}px;"></view>
+    <text class="title">参观</text>
+    <view style="height:5px;"></view>
+  </view>
+
+  <view class="chuck">
+      <image class="chuck_image" src="https://www.wgjz.vip/img/wx_image/show/8.png/" />
+      <view class="chunk_content">
+        <title>智能列车</title>
+      </view>
+      <view class="chunk_content_1">
+        <text>智能列车演示动画，智能列车一侧三维视景以及测线车厢和车底盘分离结合的场景动画，智能列车一体化HMI宽屏、东侧三维视景和TIDS障碍物检测结果。</text>
+        <view style="height:40rpx;"></view>
+      </view>
+  </view>
+
+  <view class="chuck">
+      <image class="chuck_image" src="https://www.wgjz.vip/img/wx_image/show/5.png/" />
+      <view class="chunk_content">
+        <title>城市轨道交通线网决策平台</title>
+      </view>
+      <view class="chunk_content_1">
+        <text>通过城市轨道交通线网决策平台可以系统的监测线网的运行情况，分析日常运营情况，管理线网点线信息，提供应急决策指挥或支持，并对用户进行相应的管理操作。</text>
+        <view style="height:40rpx;"></view>
+      </view>
+  </view>
+
+  <view class="chuck">
+      <image class="chuck_image" src="https://www.wgjz.vip/img/wx_image/show/3.png/" />
+      <view class="chunk_content">
+        <title>企业定制化技能培训与竞赛</title>
+      </view>
+      <view class="chunk_content_1">
+        <text>通过城市轨道交通线网决策平台可以系统的监测线网的运行情况，分析日常运营情况，管理线网点线信息，提供应急决策指挥或支持，并对用户进行相应的管理操作。</text>
+        <view style="height:40rpx;"></view>
+      </view>
+  </view>
+
+  <view class="chuck">
+      <image class="chuck_image" src="https://www.wgjz.vip/img/wx_image/show/4.png/" />
+      <view class="chunk_content">
+        <title>企业运维调度控制中心</title>
+      </view>
+      <view class="chunk_content_1">
+        <text>对交控所管辖所有线路的数据进行统一实时采集监测并对数据进行统计分析。</text>
+        <view style="height:40rpx;"></view>
+      </view>
+  </view>
+
+  <view class="chuck">
+      <image class="chuck_image" src="https://www.wgjz.vip/img/wx_image/show/9.png/" />
+      <view class="chunk_content">
+        <title>企业数字化运营中心</title>
+      </view>
+      <view class="chunk_content_1">
+        <text>在信息化平台指挥大屏显示交控的IT架构及信息化监控信息，包括平台概况、月度数据分析等信息。</text>
+        <view style="height:40rpx;"></view>
+      </view>
+  </view>
+
+  <view class="chuck">
+      <image class="chuck_image" src="https://www.wgjz.vip/img/wx_image/show/5.png/" />
+      <view class="chunk_content">
+        <title>天枢平台研究室</title>
+      </view>
+      <view class="chunk_content_1">
+        <text>天枢平台研究室为调度中心、运维中心及培训中心提供数据的同时，存储车辆、通信、信号源等关键数据。</text>
+        <view style="height:40rpx;"></view>
+      </view>
+  </view>
+
+  <view class="chuck">
+      <image class="chuck_image" src="https://www.wgjz.vip/img/wx_image/show/7.png/" />
+      <view class="chunk_content">
+        <title>硬件在环半实物设备机房</title>
+      </view>
+      <view class="chunk_content_1">
+        <text>搭建一个集中测试机房环境支持工程项目测试所需的电源、网络和设备，保证工程项目和公司多产品系列开发测试环境的稳定性和健壮性，为公司的项目和产品开发测试保驾护航。</text>
+        <view style="height:40rpx;"></view>
+      </view>
+  </view>
+
+  <view class="chuck">
+      <image class="chuck_image" src="https://www.wgjz.vip/img/wx_image/show/6.png/" />
+      <view class="chunk_content">
+        <title>无人机房</title>
+      </view>
+      <view class="chunk_content_1">
+        <text>在无人机房中安装摄像头、传感器等智能巡检设备，实现24小时机房状态动态监测，第一时间报警预警。</text>
+        <view style="height:40rpx;"></view>
+      </view>
+  </view>
+  <view style="height:5px;"></view>
+</view>

@@ -1,0 +1,57 @@
+/* pages/track/track.wxss */
+.section{
+  background-color: black;
+  border: 4rpx solid #0920D0;
+}
+.img{
+  width: 100%;
+  clear:both;
+  display: block;
+ 
+}
+.section__title{
+  clear:both;
+  display: block;
+}
+
+.message{
+  position:fixed;
+  left:5px;
+  top:71%;
+  }
+
+.map_image{
+  position:fixed;
+  right:5px;
+  top:72%;
+  border: 4rpx solid #ffffff;
+  }
+
+.user_image{
+  width: 300rpx;
+  height: 300rpx;
+}
+
+.message_text{
+  font-size: 45rpx;
+  font-weight: 1000;
+  color: #F74F9E;
+}
+
+.message_red{
+  font-size: 30rpx;
+  font-weight: 1000;
+  color: #ffffff;
+}
+
+.message_green{
+  font-size: 30rpx;
+  font-weight: 1000;
+  color: #ffffff;
+}
+
+.message_blue{
+  font-size: 30rpx;
+  font-weight: 1000;
+  color: #ffffff;
+}

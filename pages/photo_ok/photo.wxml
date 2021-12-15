@@ -1,0 +1,38 @@
+<view>
+  <view class="backdrop">
+    <view style="height:{{menu_button_top}}px;"></view>
+    <text class="title">人脸检测</text>
+    <view style="height:5px;"></view>
+  </view>
+
+<view class="content">
+    <view class="box_message">
+      <view class="face_response">
+          <block wx:if="{{completeness_value=='通过'}}">
+              <image class="face_ok" src="../../icon/face_ok.png" />
+              <view>
+                <span class="face_ok_value">已通过</span>
+              </view>
+              <view>
+                <span class="face_ok_value2">{{face_message}}</span>
+              </view>
+          </block>
+
+          <block wx:else>
+              <image class="face_ok" src="../../icon/user_face_error.png" />
+              <view>
+                <span class="face_error_value">未通过</span>
+              </view>
+              <view>
+               <span class="face_ok_value2">{{face_message}}</span>
+              </view>
+          </block>
+      </view>
+    </view>
+</view>
+
+ <view class="txt_class">
+    <button class="next" bindtap="anew" style="width:50%;">重 新 注 册</button>
+    <button class="next_1" bindtap="confirm" style="width:50%;">确 认 保 存</button>
+  </view>
+</view>

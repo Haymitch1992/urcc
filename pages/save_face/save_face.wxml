@@ -1,0 +1,13 @@
+<view class="content">
+    <view class="head">
+        <camera mode="normal" device-position="front" flash="auto" binderror="error" style="width: 100%; height: 100%;">
+                <view class="img_box">
+                    <view class="wrapper"></view>
+                </view>
+
+        </camera>
+    </view>
+    <view class="button_photo">
+        <button class="button_1" bindtap="takePhoto" style="width: 100%;">点 击 拍 照</button>
+    </view>
+</view>

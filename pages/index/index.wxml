@@ -1,0 +1,45 @@
+<!--index.wxml-->
+
+<view class="container">
+  <view>
+    <view>
+        <view class="login_black_img">
+            <image style="height:{{wx_height}}px;width:{{wx_Width}}px;" src="{{index_background_img}}" />
+        </view>
+    </view>
+    <view class="userinfo">
+      
+      <view class="login_img">
+          <image style="height:38rpx;width:250rpx;" src="{{index_login_img}}" />
+      </view>
+
+      <view style="height:150rpx"></view>
+
+      <button class="tourist" bindtap="tourist">
+          <text class="login_text">游客进入</text>
+      </button>
+
+      <view class="background">
+        <block wx:if="{{canIUseOpenData}}">
+        <view class="userinfo-avatar">
+          <open-data type="userAvatarUrl"></open-data>
+        </view>
+        <open-data type="userNickName"></open-data>
+      </block>
+      <block wx:elif="{{!hasUserInfo}}">
+        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile">
+            <text class="login_text">快速登录</text>
+        </button>
+        <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+            <text class="login_text">快速登录</text>
+        </button>
+        <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+      </block>
+      <block wx:else>
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+      </view>
+    </view>
+  </view>
+</view>

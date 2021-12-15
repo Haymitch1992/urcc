@@ -1,0 +1,74 @@
+/* pages/save_face/save_face.wxss */
+
+.content{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.head{
+    width: 100%;
+    height: 100%;
+
+}
+
+.img_1{
+    display:flex;
+    height: 100%;
+    justify-content: center; 
+    /* align-items: center; */
+}
+
+.text_center{
+    font-size: 50rpx;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.button_photo{
+  width: 100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.button_1{
+    position: fixed;
+    color:#fff;
+    background-color: #0920D0;   
+    font-size: 40rpx;
+    /* border-radius: 2000rpx;  */
+    bottom: 0;
+    width: 20px;
+}
+
+.img-box {
+    position: relative;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: 100vh;
+    background:
+      linear-gradient(#1a98ca, #1a98ca),
+      linear-gradient(90deg, #ffffff33 1px, transparent 0, transparent 19px),
+      linear-gradient(#ffffff33 1px, transparent 0, transparent 19px),
+      linear-gradient(transparent, #1a98ca);
+    background-size: 100% 1.5%, 40px 100%, 100% 40px, 100% 100%;
+    background-repeat: no-repeat, repeat, repeat, no-repeat;
+    background-position: 0% 0%, 0 0, 0 0, 0 0;
+    /* 初始位置 */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 1.5%, 0% 1.5%);
+    /* 添加动画效果 */
+    animation: move 4s infinite linear;
+  }
+
+  @keyframes move {
+    to {
+      background-position: 0 100%, 0 0, 0 0, 0 0;
+      /* 终止位置 */
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+  }

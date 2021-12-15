@@ -1,0 +1,94 @@
+/* pages/if_user_photo/if_user_photo.wxss */
+
+.backdrop {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.title {
+    font-size: 38rpx;
+    font-weight: 1000;
+    line-height: 64rpx;
+    display:flex;
+    color: rgb(0, 0, 0);
+    justify-content:center;
+}
+
+.centre {
+    display:flex;
+    height: 500rpx;        
+    justify-content: center;        
+    align-items:center;  
+}
+
+.centre image {
+    margin-top: 20px;
+    width:300rpx;
+    height:300rpx;
+}
+
+.txt_class {
+    display:flex;
+    justify-content: center;        
+    align-items:center;  
+}
+
+.txt_1 {
+    /* margin-top: 15px; */
+    width: 189px;
+    height: 20px;
+    font-size: 15px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 900;
+    color: #333333;
+    line-height: 20px;
+}
+
+.txt_2 {
+    margin-top: 5px;
+    width: 163px;
+    /* height: 20px; */
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 17px;
+}
+
+.txt_3 {
+    margin-top: 5px;
+    margin-left: 160rpx;
+    width: 163px;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 17px;
+}
+
+
+.next {
+    margin: 20rpx;
+    top: 80rpx;
+    display:flex;
+    color:floralwhite;
+    justify-content:center;
+    background: #0920D0;
+    border-radius: 7px;
+}
+
+.next_1 {
+    margin: 20rpx;
+    display:flex;
+    color:floralwhite;
+    background: #BBBBBB;
+    border-radius: 7px;
+    justify-content:center;
+}
+
+.content{
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 100vh;
+    
+}

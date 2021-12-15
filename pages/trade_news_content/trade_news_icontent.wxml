@@ -1,0 +1,8 @@
+<view>
+    <view class="backdrop">
+        <view style="height:{{menu_button_top}}px;"></view>
+            <text class="title">行业资讯</text>
+        <view style="height:5px;"></view>
+    </view>
+    <image src="{{trade_news_png_url}}" style="width:100%;" mode="widthFix"></image>
+</view>

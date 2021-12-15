@@ -1,0 +1,169 @@
+/* pages/meeting/meeting.wxss */
+.info{
+  display:flex;
+  justify-content: center;        
+  /* align-items:center; */
+  /* flex-direction: column; */
+}
+
+.backdrop {
+    width: 100%;
+    height: 254rpx;
+    background-color: #0920D0;
+    /* position:absolute; */
+}
+
+.info_base{
+  width: 100%;
+  /* height: 100%; */
+  /* background-color: #F5F5F5; */
+  justify-content: center;        
+  display:flex;
+}
+
+.title {
+    font-size: 38rpx;
+    font-weight: 1000;
+    line-height: 64rpx;
+    display:flex;
+    color: floralwhite;
+    justify-content:center;
+}
+
+.content{
+    background-color: rgb(255, 255, 255);
+    margin-top: -50rpx;
+    width: 94vw;
+    height: 23vh;
+    border-radius: 17px;
+    display:flex;
+    justify-content: center;        
+    align-items:center;
+    flex-direction: column;
+   }
+
+.userinfo-avatar {
+    overflow: hidden;
+    width: 128rpx;
+    height: 128rpx;
+    margin-top: -120rpx;
+    border-radius: 50%;
+}
+
+.userinfo-nickname{
+    color: rgb(0, 0, 0);
+    font-size: 50rpx;
+  }
+
+.content_1{
+    box-shadow: 0rpx 10rpx 50rpx 10rpx rgba(0, 0, 0, 0.1);
+    border-radius: 30px;  
+    width: 100%;
+}
+
+.login_button{
+    /* overflow: hidden; */
+    /* width: 20rpx; */
+    /* height: 100rpx; */
+    /* margin: 20rpx; */
+    /* border-radius: 50%; */
+    font-weight: bold;
+    color: black;
+    /* background-color: black; */
+}
+
+button{
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
+  }
+  .button-sp-area{
+    margin: 0 auto;
+  }
+  .mini-btn{
+    font-size: 20px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 700;
+    color: #000000;
+    line-height: 19px;
+    overflow: hidden;
+  }
+
+.message{
+  /* margin-left:-30px; */
+  border:none;
+  background-color: rgb(255, 255, 255);
+  font-weight: 450;
+  color: rgb(153, 150, 150);
+}
+
+.message text{
+  font-size: 15px;
+}
+
+
+.outer6 {
+  /* z-index: 115; */
+  /* height: 100rpx; */
+  /* border-radius: 16rpx; */
+  /* background-color: rgba(247,79,158,1); */
+  /* margin-top: rpx; */
+  /* width: 200rpx; */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.txt7 {
+  z-index: 116;
+  width: 128rpx;
+  display: block;
+  overflow-wrap: break-word;
+  color: rgba(255,255,255,1);
+  font-size: 32rpx;
+  font-family: PingFangSC-Medium;
+  white-space: nowrap;
+  line-height: 45rpx;
+}
+
+.content_select{
+  background-color: rgb(255, 255, 255);
+  margin-top: 10px;
+  width: 94vw;
+  /* height: 56vh; */
+  border-radius: 17px;
+  padding:0px 0px 12px 0px;
+}
+
+.info3 {
+  /* width: 96rpx; */
+  display: block;
+  overflow-wrap: break-word;
+  color: rgba(247,79,158,1);
+  font-size: 36rpx;
+  /* font-family: PingFangSC-Medium;
+  white-space: nowrap;
+  line-height: 45rpx; */
+  font-weight: 800;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.label4{
+  width: 39rpx;
+  height: 39rpx;
+  margin-left: -20px;
+
+}
+
+.message_text{
+  padding-right: 50px;
+  position: relative;
+}
+
+.page{
+  background-color: #F5F5F5;
+  min-height: 100vh;
+}

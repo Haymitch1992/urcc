@@ -1,0 +1,8 @@
+<view>
+    <view class="backdrop">
+        <view style="height:{{menu_button_top}}px;"></view>
+            <text class="title">会议详情</text>
+        <view style="height:5px;"></view>
+    </view>
+    <image src="{{meeting_info}}" style="width:100%;" mode="widthFix"></image>
+</view>

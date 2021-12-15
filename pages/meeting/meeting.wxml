@@ -1,0 +1,78 @@
+<view class="page">
+    <view class="backdrop">
+        <view style="height:{{menu_button_top}}px;"></view>
+        <text class="title">乘车记录</text>
+        <view style="height:5px;"></view>
+    </view>
+
+    <view class="section3">
+        <view class="layer1">
+            <image src="../../icon/message.png" class="label1"></image>
+            <text lines="1" class="word3">仅展示最新一次乘车记录</text>
+        </view>
+    </view>
+
+    <view class="backdrop_color">
+        <view class="section4">
+            <view class="main1">
+              <text lines="1" class="info1">行程详情</text>
+            </view>
+            <view class="image_1">
+                <image src="../../icon/group.png" class="label2" />
+            </view>
+            <view class="main3">
+              <text lines="1" class="word4">进站时间</text>
+              <text lines="1" decode="true" class="word5"> {{user_info.in_time}}</text>
+            </view>
+            <view class="main3">
+              <text lines="1" class="word4">出站时间</text>
+              <text lines="1" decode="true" class="word5">{{user_info.out_time}}</text>
+            </view>
+            <view class="main3">
+              <text lines="1" class="word4">乘车情况</text>
+              <text lines="1" class="word5">{{user_info.take_subway}}</text>
+            </view>
+            <view class="main3">
+              <text lines="1" class="word4">乘车路线</text>
+              <text lines="1" class="word5">{{user_info.path}}</text>
+            </view>
+            <view class="main3">
+              <text lines="1" class="word4">选购物品</text>
+              <text lines="1" class="word5">{{user_info.shopping_name}}</text>
+            </view>
+            <view class="main3">
+              <text lines="1" class="word4">选购数量</text>
+              <text lines="1" class="word5">{{user_info.shopping_number}}</text>
+            </view>
+            <view class="main3">
+              <text lines="1" class="word4">参观记录</text>
+              <image class="user_image" src="{{imgList[0]}}" bindtap="preview" data-src="{{imgList[0]}}"></image>
+            </view>
+
+            <view class="image_2">
+                  <image src="../../icon/group.png" class="label2" />
+            </view>
+
+            <view class="main10">
+              <text lines="1" class="word13">购物账单</text>
+              <view class="section5">
+                <text lines="1" class="info9">{{user_info.shopping_bill}}</text>
+              </view>
+            </view>
+            <view class="main10">
+              <text lines="1" class="word13">乘车账单</text>
+              <view class="bd1">
+                <text lines="1" class="txt4">{{user_info.subway_bill}}</text>
+              </view>
+            </view>
+            <view class="main10">
+              <text lines="1" class="word13">总账单</text>
+              <view class="box1">
+                <text lines="1" class="info10">{{user_info.total_bill}}</text>
+              </view>
+            </view>
+          <view style="height:90rpx"></view>
+      </view>
+      <view style="height:50rpx"></view>
+    </view>
+</view>
