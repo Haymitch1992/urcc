@@ -1,5 +1,5 @@
 {
-  "pages":[
+  "pages": [
     "pages/home/home",
     "pages/index/index",
     "pages/my/my",
@@ -10,44 +10,49 @@
     "pages/if_user_photo/if_user_photo",
     "pages/meeting/meeting",
     "pages/track/track",
-    "pages/trade_news_content/trade_news_icontent"
+    "pages/trade_news_content/trade_news_icontent",
+    "pages/ar/ar_list"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "无感进站",
-    "navigationBarTextStyle":"black",
+    "navigationBarTextStyle": "black",
     "navigationStyle": "custom"
   },
   "tabBar": {
     "selectedColor": "#0920D0",
-    "list": [{ 
-      "pagePath": "pages/home/home",
-      "text": "首页",
-      "iconPath": "icon/home.png",
-      "selectedIconPath": "icon/home_.png"
-    },{
-      "pagePath": "pages/track/track",
-      "text": "轨迹",
-      "iconPath": "icon/track.png",
-      "selectedIconPath": "icon/track_.png"
-    },{
-      "pagePath": "pages/show/show",
-      "iconPath": "icon/canguan.png",
-      "selectedIconPath": "icon/canguan.png"
-    },{
-      "pagePath": "pages/meeting/meeting",
-      "text": "记录",
-      "iconPath": "icon/info.png",
-      "selectedIconPath": "icon/info_.png"
-    },
-    {
-      "pagePath": "pages/my/my",
-      "text": "我的",
-      "iconPath": "icon/my.png",
-      "selectedIconPath": "icon/my_.png"
-    }
-  ]
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "icon/home.png",
+        "selectedIconPath": "icon/home_.png"
+      },
+      {
+        "pagePath": "pages/track/track",
+        "text": "轨迹",
+        "iconPath": "icon/track.png",
+        "selectedIconPath": "icon/track_.png"
+      },
+      {
+        "pagePath": "pages/ar/ar_list",
+        "iconPath": "icon/canguan.png",
+        "selectedIconPath": "icon/canguan.png"
+      },
+      {
+        "pagePath": "pages/meeting/meeting",
+        "text": "记录",
+        "iconPath": "icon/info.png",
+        "selectedIconPath": "icon/info_.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "icon/my.png",
+        "selectedIconPath": "icon/my_.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",
@@ -58,11 +63,9 @@
   "usingComponents": {
     "mp-dialog": "weui-miniprogram/dialog/dialog"
   },
-   
- "permission": {
-  "scope.userLocation": {
-    "desc": "需要获取您的位置信息，显示您在参观区域的当前位置！"
+  "permission": {
+    "scope.userLocation": {
+      "desc": "需要获取您的位置信息，显示您在参观区域的当前位置！"
+    }
   }
 }
-}
-
