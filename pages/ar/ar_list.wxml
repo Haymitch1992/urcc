@@ -1,7 +1,38 @@
 <!--pages/ar/ar_list.wxml-->
-<text>
-  AR体验中心
-</text>
-<text>
-  国家工程实验室
-</text>
+
+<view class="banner">
+
+<image class="bg-container" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/bg.png">
+</image>
+<view >
+  <image class="ar-text" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/ar.png"></image>
+  <text class="banner-title">交控AR体验中心</text>
+</view>
+<text class="banner-label">助力AR乘客服务、AR智能运维等解决方案</text>
+</view>
+<view class="type-title"> 
+    乘客服务解决方案
+  <image mode="widthFix" class="fire-icon" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/fire.png"></image>
+</view>
+<!-- <view class="type-title">智能运维解决方案</view> -->
+<view class="scene-container">
+  <view class="scene-item"  bindtap="linkAr">
+  <image class="scene-icon" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/icon-2.png/"></image>
+  <text>招援演示</text>
+  </view>
+  <view class="scene-item"   bindtap="linkAr2">
+    <image class="scene-icon" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/icon-4.png/"></image>
+    <text>AR地图</text>
+  </view>
+</view>
+<view class="scene-container">
+  <view class="scene-item">
+    <image class="scene-icon" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/icon-3.png/"></image>
+   <text>AR列车</text>
+    </view>
+  <view class="scene-item">
+    <image class="scene-icon" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/icon-2.png/"></image>
+    <text>AR隧道</text>
+  </view>
+</view>
+

@@ -1,0 +1,14 @@
+<kivicube-scene
+    class="kivicube"
+    scene-id="2S3lOmCyuDxxY8Xub7IIgdtAQuAAOPKR"
+    bindready="ready"
+    binderror="error"
+    binddownloadAssetStart="downloadStart"
+    binddownloadAssetProgress="downloadProgress"
+    binddownloadAssetEnd="downloadEnd"
+    bindloadSceneStart="loadStart"
+    bindloadSceneEnd="loadEnd"
+    bindsceneStart="sceneStart"
+    bindopenUrl="openUrl"
+    bindphoto="photo"
+/>

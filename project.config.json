@@ -31,18 +31,18 @@
       "outputPath": ""
     },
     "enableEngineNative": false,
-    "useIsolateContext": true,
+    "useIsolateContext": false,
     "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
     "minifyWXSS": true,
     "disableUseStrict": false,
+    "minifyWXML": true,
     "showES6CompileOption": false,
-    "useCompilerPlugins": false,
-    "minifyWXML": true
+    "useCompilerPlugins": false
   },
   "compileType": "miniprogram",
-  "libVersion": "2.19.6",
+  "libVersion": "2.21.1",
   "appid": "wx6cc7862793426939",
   "projectname": "%E6%97%A0%E6%84%9F%E8%BF%9B%E7%AB%99",
   "debugOptions": {

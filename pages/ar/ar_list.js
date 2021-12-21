@@ -18,6 +18,15 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    linkAr:function(){
+      wx.navigateTo({
+        url:'../scene/index'
+      })
+    },
+    linkAr2:function(){
+      wx.navigateTo({
+        url:'../scene2/index'
+      })
+    },
   }
 })

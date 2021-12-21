@@ -2,52 +2,39 @@
 
 .page {
     background-color: #F5F5F5;
-    min-height: 100vh;
+    padding-bottom: 20rpx;
 }
 
 .backdrop {
     width: 100%;
     background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding-bottom: 10rpx;
 }
 
 .title {
-    font-size: 38rpx;
+    font-size: 34rpx;
     font-weight: 1000;
-    line-height: 64rpx;
-    color: rgb(0, 0, 0);
-    display:flex;
-    justify-content:center;
+    line-height: 68rpx;
+    color: #000;
 }
 
 .chuck{
     background-color: #fffdfd;
     margin: 35rpx;
-    border-radius: 40rpx;
+    border-radius: 10rpx;
+    padding: 20rpx;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.1);
 }
 
 .chuck image{
     width: 100%;
-    border-radius: 40rpx 40rpx 0 0;
+    height: 300rpx;
+    border-radius: 10rpx;
+    margin: 10rpx 0 0;
 }
 
-.chunk_content{
-    margin: 20rpx;
-}
-
-.chunk_content title{
-    font-size: 20px;
-    font-family: PingFangSC-Medium, PingFang SC;
-    font-weight: bold;
-    color: #030303;
-    line-height: 42px;
-}
-
-.chunk_content_1{
-    margin: 20rpx;
-}
-
-.chunk_content_1 text{
-    font-weight: 300;
-    line-height: 3px;
-    font-size: 18px;
+.chuck text{
+    font-size: 30rpx;
+    color: #666;
 }
