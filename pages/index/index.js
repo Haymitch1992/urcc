@@ -50,10 +50,12 @@ onLoad(query) {
             code: res.code
           },
           success: (res) => {
-            console.log('获取到了个人唯一表时open_id', res.data.open_id)
+
             _this.setData({
               open_id: res.data.open_id
             })
+            console.log('用户open_id为：', res.data.open_id)
+            app.globalData.open_id = res.data.open_id
           }
         })
       } else {
@@ -92,50 +94,66 @@ getUserProfile(e) {
         hasUserInfo: true
       })
       // 获得用户微信头像
-      app.globalData.open_id = that.data.open_id
-      console.log('全局open_id：', app.globalData.open_id)
+
       app.globalData.head_photo_url = res.userInfo.avatarUrl
       app.globalData.nickName = res.userInfo.nickName
-      this.submitUserInfo()
+      this.Countdown()
     }
   })
+},
+
+Countdown() {
+  let that = this;
+  setTimeout(function () {
+    that.submitUserInfo()
+  }, 1000);
 },
 
 submitUserInfo(){
   // 获取到个人信息和个人唯一标识后将信息发送到后端进行保存,
   var save_user_info_url = app.globalData.URL + 'SaveUserInfo/'
-  wx.request({
-    url: save_user_info_url,
-    method: "POST",
-    dataType:'json',
-    data: {
-      userInfo: this.data.userInfo,
-      open_id: app.globalData.open_id,
-      in_mode: app.globalData.in_mode
-    },
-    // 根据返回结果进行判断 为false关闭当前页面，跳转到拍照页面
-    // 为true时，修改全局变量
-    success: (res) => {
-      if(res.data.if_img==false){
-        console.log('该用户未录入脸部信息')
-        wx.navigateTo({
-          url: "../if_user_photo/if_user_photo"
-        })
-      }else{
-        // 判断用户是否完成了长期消息订阅
-        if(res.data.long_message==true){
-          app.globalData.long_message = true
+  if (app.globalData.open_id != ''){
+    wx.request({
+      url: save_user_info_url,
+      method: "POST",
+      dataType:'json',
+      data: {
+        userInfo: this.data.userInfo,
+        open_id: app.globalData.open_id,
+        in_mode: app.globalData.in_mode
+      },
+      // 根据返回结果进行判断 为false关闭当前页面，跳转到拍照页面
+      // 为true时，修改全局变量
+      success: (res) => {
+        if(res.data.if_img==false){
+          console.log('该用户未录入脸部信息')
+          wx.navigateTo({
+            url: "../if_user_photo/if_user_photo"
+          })
+        }else{
+          // 判断用户是否完成了长期消息订阅
+          if(res.data.long_message==true){
+            app.globalData.long_message = true
+          }
+          app.globalData.if_img = true
+          wx.switchTab({
+            url: "../home/home"
+          })
         }
-        app.globalData.if_img = true
-        wx.switchTab({
-          url: "../home/home"
-        })
+      },
+      fail:(res) =>{
+        console.log('请求失败')
       }
-    },
-    fail:(res) =>{
-      console.log('请求失败')
-    }
-  })
+    })
+  }else{
+    wx.showToast({
+      title: '登录中...',
+      icon: 'loading',
+      duration: 3000
+    })
+    console.log('没有获取到open_id')
+    this.Countdown()
+  }
 },
 
 tourist(){
