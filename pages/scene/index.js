@@ -1,9 +1,34 @@
 const { downloadSceneAsset, clearSceneCache } = requirePlugin("kivicube");
 
 Page({
+  data:{
+    condition:false,
+    speed:18,
+  },
+  goArlist(){
+    wx.switchTab({ url: '/pages/ar/ar_list'});
+  
+  },
+  changeSpeed(){
+    // 模拟网络速度
+    let speedList= [20,24,22,44,28,34,32,25,22,18]
+    let num = Math.floor((Math.random() * 10) );
+    Math.random()
+    this.setData({
+      speed: speedList[num]
+    })
+  },
+  videoErrorCallback: function(e) {
+    console.log('视频错误信息:')
+    console.log(e.detail.errMsg)
+  },
   onLoad() {
-    downloadSceneAsset("p6aHcd1OiG3Y92kNinoRZnWrFyBjexqT", (progress) => {
+    this.videoContext = wx.createVideoContext('myVideo')
+    downloadSceneAsset("wgj3kHwFMhbOFT9rTA3mNSNYqOgXYTs0", (progress) => {
       console.log("progress", progress);
+     setInterval(()=>{
+       this.changeSpeed()
+     },2000)
     }).then(() => {
       // 使kivicube-scene组件attached进入页面节点树。比如wx:if为真
     });
@@ -18,7 +43,12 @@ Page({
   loadStart() {},
   loadEnd() {},
   sceneStart() {
-    wx.showToast({ title: "可开始体验场景", icon: "none" });
+     this.setData({
+      condition: true
+    })
+  },
+  tracked(){
+    console.log('识别')
   },
   openUrl({ detail: url }) {
     wx.navigateTo({ url: `path/to/webview?url=${encodeURIComponent(url)}` });

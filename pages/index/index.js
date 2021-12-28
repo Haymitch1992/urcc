@@ -137,7 +137,7 @@ submitUserInfo(){
           }
           app.globalData.if_img = true
           wx.switchTab({
-            url: "../home/home"
+            url: "../show/show"
           })
         }
       },
@@ -165,7 +165,7 @@ tourist(){
      if (res.confirm) {
       console.log('用户点击确定')
       wx.switchTab({
-       url: "../home/home"
+       url: "../show/show"
      })
      app.globalData.open_id = ''
      } else if (res.cancel) {
