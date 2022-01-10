@@ -48,6 +48,7 @@ page {
   font-size: 28rpx;
   position: relative;
   padding-left: 132rpx;
+  margin-bottom: 200rpx;
 }
 .exit-icon{
   width: 36rpx;
