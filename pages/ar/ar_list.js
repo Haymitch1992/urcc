@@ -18,6 +18,13 @@ Component({
    * 组件的方法列表
    */
   methods: {
+    coding:function(){
+      wx.showToast({
+        title: '代码开发中...',
+        icon: 'loading',
+        duration: 2000
+      })
+    },
     linkAr:function(){
       wx.navigateTo({
         url:'../scene/index'

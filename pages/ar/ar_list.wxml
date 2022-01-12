@@ -16,21 +16,21 @@
 </view>
 <!-- <view class="type-title">智能运维解决方案</view> -->
 <view class="scene-container">
-  <view class="scene-item"  bindtap="linkAr">
+  <view class="scene-item" bindtap="linkAr">
   <image class="scene-icon" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/icon-2.png/"></image>
-  <text>招援演示</text>
+  <text>AR召援</text>
   </view>
-  <view class="scene-item"   bindtap="linkAr2">
+  <view class="scene-item" bindtap="linkAr2">
     <image class="scene-icon" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/icon-4.png/"></image>
-    <text>AR地图</text>
+    <text>AR线路图</text>
   </view>
 </view>
 <view class="scene-container">
-  <view class="scene-item">
+  <view class="scene-item" bindtap="coding">
     <image class="scene-icon" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/icon-3.png/"></image>
    <text>AR列车</text>
     </view>
-  <view class="scene-item">
+  <view class="scene-item" bindtap="coding">
     <image class="scene-icon" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/icon-2.png/"></image>
     <text>AR隧道</text>
   </view>

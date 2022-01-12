@@ -14,26 +14,54 @@
     bindtracked="tracked"
 />
 <view  wx:if="{{condition}}" class="page">
-  <view class="arrial-title">列车预计
-  <text class="green-color">2min</text>
-  后到达</view>
-  <view class="item">
-    <view class="status status-1"></view>
-    <view class="status-text">舒适</view>
-  </view>
-  <view class="item">
-    <view class="status status-2"></view>
-    <view class="status-text">比较拥挤</view>
-  </view>
-  <view class="item">
-    <view class="status status-3"></view>
-    <view class="status-text">拥挤</view>
-  </view>
-  <view class="item">
-    <view class="status status-4"></view>
-    <view class="status-text clear-margin">严重拥挤</view>
+  <view class="camera-status">
+    <view class="arrial-title">列车预计
+    <text class="green-color">2min</text>
+    后到达
+    <text class="green-color">金安桥</text>
+    </view>
+    <view   wx:if="{{tab===1}}">
+      <view class="item">
+        <view class="status status-1"></view>
+        <view class="status-text">舒适</view>
+      </view>
+      <view class="item">
+        <view class="status status-2"></view>
+        <view class="status-text">比较拥挤</view>
+      </view>
+      <view class="item">
+        <view class="status status-3"></view>
+        <view class="status-text">拥挤</view>
+      </view>
+      <view class="item">
+        <view class="status status-4"></view>
+        <view class="status-text clear-margin">严重拥挤</view>
+      </view>
+    </view>
+    <view  wx:if="{{tab===2}}">
+      <view class="item">
+        <view class="status status-7"></view>
+        <view class="status-text">当前站</view>
+      </view>
+      <view class="item">
+        <view class="status status-5"></view>
+        <view class="status-text">可到达站</view>
+      </view>
+      <view class="item">
+        <view class="status status-6"></view>
+        <view class="status-text">不可到达站</view>
+      </view>
+    </view>
+    <view bindtap="goArlist" class="exit-btn">
+        <image class="exit-icon" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/exit.png"></image>
+        <text>离开</text>
+    </view>
   </view>
   <view class="subway-map">
+    <view>
+      <text class="btn" class="{{tab==1?'active btn':'btn'}}" bindtap="changeTab1">列车拥挤度</text>
+      <text class="btn" class="{{tab==2?'active btn':'btn'}}"  bindtap="changeTab2">线网可达性</text>
+    </view>
     <canvas style="width: 100%;height: 400px;"  type="2d" id="myCanvas"></canvas>
   </view>
 </view>
