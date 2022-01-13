@@ -67,6 +67,7 @@ Page({
   onLoad() {
     downloadSceneAsset("wFELEGELEDnR5miP9xDzfOta94OBPcf5", (progress) => {
       console.log("progress", progress);
+      // this.sceneStart()
     }).then(() => {
       // 使kivicube-scene组件attached进入页面节点树。比如wx:if为真
     });

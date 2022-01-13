@@ -15,8 +15,8 @@
 
       <view style="height:150rpx"></view>
 
-      <button class="tourist" bindtap="tourist">
-          <text class="login_text">游客进入</text>
+      <button class="tourist login-btn" bindtap="tourist">
+         游客进入
       </button>
 
       <view class="background">
@@ -27,11 +27,11 @@
         <open-data type="userNickName"></open-data>
       </block>
       <block wx:elif="{{!hasUserInfo}}">
-        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile">
-            <text class="login_text">快速登录</text>
+        <button wx:if="{{canIUseGetUserProfile}}" class="quick-btn" bindtap="getUserProfile">
+            快速登录
         </button>
-        <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
-            <text class="login_text">快速登录</text>
+        <button wx:elif="{{canIUse}}" class="quick-btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+           快速登录
         </button>
         <view wx:else> 请使用1.4.4及以上版本基础库 </view>
       </block>

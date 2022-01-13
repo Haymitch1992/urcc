@@ -12,24 +12,9 @@
   filter:alpha(Opacity=100);
 }
 
-.background{
-  height: 220rpx;
-  display:flex;
-  justify-content: center;        
-  align-items:center;
-  border-radius: 30px;  
-  width: 100%;
-}
 
-.background button {
-  width: 204px;
-  height: 51px;
-  background: #F74F9E;
-  border-radius: 9px;
-  display:flex;
-  justify-content: center;        
-  align-items:center;
-}
+
+
 
 .login_text{
   font-size: 17px;
@@ -39,18 +24,22 @@
   line-height: 48rpx;
   letter-spacing: 2rpx;
 }
-
+.login-btn{
+  color: #fff;
+  padding: 24rpx 0;
+}
 .tourist{
   color:#fff;
-  width: 204px;
-  height: 51px;
   background: #0920D0;
-  border-radius: 9px;
-  display:flex;
-  justify-content: center;        
-  align-items:center;
+  margin-bottom: 50rpx;
+  border-radius: 20rpx;
 }
-
+.quick-btn{
+  color:#fff;
+  padding: 24rpx 0;
+  background: #F74F9E;
+  border-radius: 20rpx;
+}
 .userinfo-avatar {
   overflow: hidden;
   width: 128rpx;
