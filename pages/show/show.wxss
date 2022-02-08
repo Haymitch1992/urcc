@@ -5,6 +5,15 @@
     padding-bottom: 20rpx;
 }
 
+.page_title {
+    font-size: 38rpx;
+    font-weight: 1000;
+    line-height: 64rpx;
+    display:flex;
+    color: rgb(0, 0, 0);
+    justify-content:center;
+}
+
 .backdrop {
     width: 100%;
     background-color: rgb(255, 255, 255);

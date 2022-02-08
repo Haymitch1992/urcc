@@ -12,14 +12,14 @@ Page({
       duration: 1000
     })
     this.photo_js
-    
    },
+
   takePhoto(){
     // 点击拍照时，获取照片临时路径，并将照片发送到后端进行保存
     wx.showToast({
-      title: '正在检测..',
+      title: '正在检测...',
       icon: 'loading',
-      duration: 1000
+      duration: 500000
     })
    const ctx = wx.createCameraContext()
    var add_user_img_url = app.globalData.URL + 'AddUserImg/'
@@ -43,18 +43,18 @@ Page({
            },
            
            success: function(res){
-             if (res.statusCode==200){
-              wx.redirectTo({
-                url: "../photo_ok/photo?photo_path=" + that.data.tempImagePath + '&face_response=' + res.data,
-              })
-               console.log('请求成功！')
-             }else(
-              wx.showToast({
-                title: '录入失败，请重试！',
-                icon: 'success',
-                duration: 1000
-               }),
-               console.log('请求失败'))
+              if (res.statusCode==200){
+                wx.redirectTo({
+                  url: "../photo_ok/photo?photo_path=" + that.data.tempImagePath + '&face_response=' + res.data,
+                })
+                console.log('请求成功！')
+              }else(
+                wx.showToast({
+                  title: '录入失败，请重试！',
+                  icon: 'success',
+                  duration: 1000
+                }),
+                console.log('请求失败'))
            },
            fail: function(res){
               console.log('点击了拍照：', res)

@@ -64,12 +64,10 @@ Page({
           console.log('请求失败')
           console.log(res)
           wx.switchTab({
-            url: "../home/home"
+            url: "../show/show"
           })
         }
       })
-
-
       wx.showModal({
         title: '保存成功',
         content: '点击-确定-前往首页',
@@ -77,7 +75,7 @@ Page({
          if (res.confirm) {
           console.log('用户点击确定')
           wx.switchTab({
-           url: "../home/home"
+           url: "../show/show"
          })
          } else if (res.cancel) {
           console.log('用户点击取消')
