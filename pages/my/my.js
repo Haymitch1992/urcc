@@ -57,7 +57,7 @@ Page({
     }else{
       console.log('用户满足订阅消息的条件')
       wx.requestSubscribeMessage({
-        tmplIds: ['6wsTSm-jf9sKQCZsODTdDFtlYn8MzOCYhG_J2qGljwA'],
+        tmplIds: ['6wsTSm-jf9sKQCZsODTdDFtlYn8MzOCYhG_J2qGljwA', 'dnhxLxxBLySIMu-N3FKcTZrc0oBmUB7CY6cy0IvMH94'],
         success (res) {
           // 判断用户消息订阅成功时，发送请求，改变该用户消息订阅，长期状态
           if (res.errMsg=="requestSubscribeMessage:ok"){
