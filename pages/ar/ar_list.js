@@ -35,5 +35,20 @@ Component({
         url:'../scene2/index'
       })
     },
+    linkAr3:function(){
+      wx.navigateTo({
+        url:'../scene3/index'
+      })
+    },
+    linkAr4:function(){
+      wx.navigateTo({
+        url:'../scene4/index'
+      })
+    },
+    linkAr5:function(){
+      wx.navigateTo({
+        url:'../scene5/index'
+      })
+    },
   }
 })

@@ -11,6 +11,7 @@
     bindsceneStart="sceneStart"
     bindopenUrl="openUrl"
     bindphoto="photo"
+    hideTakePhoto="true"
     bindtracked="tracked"
 />
 <view  wx:if="{{condition}}" class="page">

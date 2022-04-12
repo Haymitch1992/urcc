@@ -1,0 +1,33 @@
+<kivicube-scene
+    class="kivicube"
+    scene-id="vNFZUNja1dPKMXPefhmeuxRnHuGJkP8q"
+    bindready="ready"
+    binderror="error"
+    binddownloadAssetStart="downloadStart"
+    binddownloadAssetProgress="downloadProgress"
+    binddownloadAssetEnd="downloadEnd"
+    bindloadSceneStart="loadStart"
+    bindloadSceneEnd="loadEnd"
+    bindsceneStart="sceneStart"
+    bindopenUrl="openUrl"
+    bindphoto="photo"
+    hideTakePhoto="true"
+    bindtracked="tracked"
+/>
+<!-- 应急疏散场景 -->
+<view class="camera-container"   wx:if="{{condition}}">    
+    <view class="btn-line">
+        <button bindtap="changeTab1">疏散线路</button>
+        <button bindtap="changeTab2">应急科普</button>
+    </view>
+    <view>
+        <!-- 疏散线路图 -->
+        <view class="show-video"  wx:if="{{!showmap}}">
+            <image mode="widthFix" class="fire-icon" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/evacuation.png"></image>
+        </view>
+        <!-- 应急疏散的视频 -->
+        <view class="show-video"   wx:if="{{showmap}}">
+            <txv-video  vid="h3330hzohra" playerid="txv1" autoplay="{{true}}"></txv-video>
+        </view>
+    </view>
+</view>

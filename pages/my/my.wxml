@@ -11,28 +11,22 @@
                 <view class="button-sp-area">
                     <span class="mini-btn">{{nickName}}</span>
                 </view>
-
                 <view class="outer6" wx:if="{{user_img_value=='人脸未采集'}}">
                     <view style="height:10px;"></view>
                     <span class="info3">
-                    <!-- <image class="label4" src="../../icon/error.png"/> -->
                     {{user_img_value}}</span>
                 </view>
-
                 <view class="outer6" wx:else>
                     <view style="height:10px;"></view>
                     <span class="info3">
-                    <!-- <image class="label4" src="../../icon/ok.png"/> -->
                     {{user_img_value}}</span>
                 </view>
-
             </block>
             <block wx:else>
                 <image class="userinfo-avatar" src="../../icon/user.png" mode="cover" bindtap="login"></image>
                 <view class="button-sp-area" bindtap="login">
                     <span class="mini-btn">点我登录</span>
                 </view>
-
                 <view class="outer6">
                     <view style="height:10px;"></view>
                     <span class="info3">
@@ -42,7 +36,6 @@
             </block>
         </view>
     </view>
-    
 
     <view class="info_base">
      <view class="content_select">

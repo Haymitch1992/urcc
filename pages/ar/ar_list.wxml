@@ -1,7 +1,6 @@
 <!--pages/ar/ar_list.wxml-->
 
 <view class="banner">
-
 <image class="bg-container" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/bg.png">
 </image>
 <view >
@@ -22,17 +21,27 @@
   </view>
   <view class="scene-item" bindtap="linkAr2">
     <image class="scene-icon" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/icon-4.png/"></image>
-    <text>AR线路图</text>
+    <text>AR线网图</text>
   </view>
 </view>
 <view class="scene-container">
-  <view class="scene-item" bindtap="coding">
-    <image class="scene-icon" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/icon-3.png/"></image>
-   <text>AR列车</text>
+  <view class="scene-item" bindtap="linkAr3">
+    <image class="scene-icon" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/icon-5.png/"></image>
+   <text>AR疏散</text>
     </view>
-  <view class="scene-item" bindtap="coding">
+  <view class="scene-item" bindtap="linkAr4">
+    <image class="scene-icon" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/icon-6.png/"></image>
+    <text>AR车站</text>
+  </view>
+</view>
+<view class="scene-container">
+  <view class="scene-item" bindtap="linkAr5">
+    <image class="scene-icon" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/icon-3.png/"></image>
+   <text>AR线路图</text>
+    </view>
+  <view class="scene-item" bindtap="linkAr4" style="opacity:0 ;">
     <image class="scene-icon" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/icon-2.png/"></image>
-    <text>AR隧道</text>
+    <text>AR车站</text>
   </view>
 </view>
 

@@ -13,7 +13,10 @@
     "pages/track/track",
     "pages/trade_news_content/trade_news_icontent",
     "pages/scene/index",
-    "pages/scene2/index"
+    "pages/scene2/index",
+    "pages/scene3/index",
+    "pages/scene4/index",
+    "pages/scene5/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
@@ -25,8 +28,12 @@
   },
   "plugins": {
     "kivicube": {
-      "version": "1.5.10",
+      "version": "1.6.3",
       "provider": "wx3bbab3920eabccb2"
+    },
+    "tencentvideo":{
+      "version": "2.0.10",
+      "provider": "wxa75efa648b60994b"
     }
   },
   "tabBar": {

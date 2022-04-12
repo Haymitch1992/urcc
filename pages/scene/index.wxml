@@ -11,27 +11,26 @@
     bindsceneStart="sceneStart"
     bindopenUrl="openUrl"
     bindphoto="photo"
+    hideTakePhoto="true"
     bindtracked="tracked"
 />
-<view class="camera-container" wx:if="{{condition}}">
-    <view class="camera-content">
-        <view class="show-video">
-            <video 
-            id="myVideo" 
-            src="https://www.wgjz.vip:30401/img/wx_image/ar_img/ar.MP4" 
-            autoplay="true"
-            loop="true"
-            binderror="videoErrorCallback" 
-            ></video>
-        </view>
-        <view class="camera-status">
-            <image class="camera-icon" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/camera.png"></image>
-            <view>设备名称：招援相机</view>
-            <view>网络状态：<text class="speed-text">{{ speed }}</text> kb/s</view>
-            <view bindtap="goArlist" class="exit-btn">
-                <image class="exit-icon" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/exit.png"></image>
-                <text>离开</text>
+<!-- 图像识别后显示视频内容 -->
+<view wx:if="{{condition}}"  class="page">
+    <view class="camera-container">
+        <view class="camera-content">
+            <view class="show-video">
+                <txv-video  vid="n3331o905zo" playerid="txv1" autoplay="{{true}}"></txv-video>
+            </view>
+            <view class="camera-status">
+                <image class="camera-icon" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/camera.png"></image>
+                <view>设备名称：招援相机</view>
+                <view>网络状态：<text class="speed-text">{{ speed }}</text> kb/s</view>
+                <view bindtap="goArlist" class="exit-btn">
+                    <image class="exit-icon" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/exit.png"></image>
+                    <text>离开</text>
+                </view>
             </view>
         </view>
     </view>
 </view>
+

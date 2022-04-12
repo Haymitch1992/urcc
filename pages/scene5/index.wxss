@@ -1,0 +1,173 @@
+page {
+  height: 100%;
+  overflow: hidden;
+}
+.kivicube {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.camera-container{
+  position: absolute;
+  left:0;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  background: rgba(0,0,0,.4);
+  z-index: 2;
+}
+.camera-content{
+  position: absolute;
+  left:0;
+  width: 100%;
+  bottom: 0;
+}
+.show-video{
+  width: calc(100% - 40rpx);
+  border-radius: 20rpx;
+  box-sizing: border-box;
+  color: #333;
+  padding: 32rpx;
+  margin: 20rpx auto;
+  background: rgba(255,255,255,.8);
+}
+.speed-text{
+  color: rgb(20, 255, 52);
+}
+#myVideo{
+  width: 100%;
+}
+.camera-status{
+  width: calc(100% - 40rpx);
+  border-radius: 20rpx;
+  box-sizing: border-box;
+  color: #333;
+  padding: 32rpx;
+  margin: 32rpx auto;
+  background: rgba(255,255,255,.8);
+  font-size: 28rpx;
+  position: relative;
+  padding-left: 132rpx;
+  margin-bottom: 200rpx;
+}
+.exit-icon{
+  width: 36rpx;
+  height: 36rpx;
+  display: block;
+  margin-left: 22rpx;
+  margin-bottom: 6rpx;
+
+}
+.camera-icon{
+  width: 56rpx;
+  height: 56rpx;
+  display: block;
+  position: absolute;
+  left: 32rpx;
+  top: 38rpx;
+  background: #ddd;
+  border-radius: 50%;
+  border: 10rpx solid #ddd;
+}
+.exit-btn{
+  width: 80rpx;
+  position: absolute;
+  right: 12rpx;
+  top: 42rpx;
+  text-align: center;
+  font-size: 24rpx;
+}
+.btn-line{
+  background: rgba(0,0,0,.6);
+  text-align: center;
+  padding: 50rpx 0;
+}
+.btn-line button{
+  display: inline-block;
+  margin: 0 10rpx !important;
+  color: #fff;
+  background: #23b7fa;
+  font-size: 24rpx;
+  width: 270rpx !important;
+}
+.fire-icon{
+  display: block;
+  width: 100%;
+}
+.train-item{
+  position: absolute;
+}
+.train-icon{
+  width: 40rpx;
+  height: 146rpx;
+  display: block;
+}
+.subway-line-container{
+  position: relative;
+}
+.line{
+  height: 1200rpx;
+  width: 30rpx;
+  background: #0070ac;
+  border-radius: 20rpx;
+  position: absolute;
+  top: 0rpx;
+  left: 200rpx;
+}
+.point{
+  width: 30rpx;
+  height: 30rpx;
+  background: #28bd72;
+  border-radius: 50%;
+  border: 8rpx solid #fff;
+  position: absolute;
+  top: 400rpx;
+  left: 192rpx;
+}
+.point-item-1{
+  top: 400rpx;
+}
+.point-item-2{
+  top: 940rpx;
+}
+.point-item-3{
+  top: -15rpx;
+}
+.train-item-2{
+  position: absolute;
+  top:400rpx;
+  left:140rpx;
+}
+.train-item-1{
+  position: absolute;
+  top:400rpx;
+  left:140rpx;
+}
+.train-item-1 .train-icon3{
+  position: relative;
+  top:400rpx;
+}
+.station{
+  background: #202c44;
+  color:#fff;
+  position: absolute;
+  width: 300rpx;
+  border-radius: 10rpx;
+  border: 4rpx solid #fff;
+  text-align: center;
+  padding:10rpx 0;
+  left: 260rpx;
+  font-size: 24rpx;
+}
+.station .cn{
+  font-size: 40rpx;
+}
+.station-item-1{
+  top: -40rpx;
+}
+.station-item-2{
+  top: 360rpx;
+}
+.station-item-3{
+  top: 900rpx;
+}

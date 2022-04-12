@@ -1,0 +1,17 @@
+<kivicube-scene
+    class="kivicube"
+    scene-id="PGeoNpe0ovEtpCKxPNX0qeLolGpm9f1c"
+    bindready="ready"
+    binderror="error"
+    binddownloadAssetStart="downloadStart"
+    binddownloadAssetProgress="downloadProgress"
+    binddownloadAssetEnd="downloadEnd"
+    bindloadSceneStart="loadStart"
+    bindloadSceneEnd="loadEnd"
+    bindsceneStart="sceneStart"
+    bindopenUrl="openUrl"
+    bindphoto="photo"
+    bindtracked="tracked"
+/>
+<!-- 应急疏散场景 -->
+
