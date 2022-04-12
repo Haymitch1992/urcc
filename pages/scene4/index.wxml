@@ -1,6 +1,6 @@
 <kivicube-scene
     class="kivicube"
-    scene-id="PGeoNpe0ovEtpCKxPNX0qeLolGpm9f1c"
+    scene-id="zvW6O1t9Yg7kHpA0uOzniTXDfbMlIB77"
     bindready="ready"
     binderror="error"
     binddownloadAssetStart="downloadStart"

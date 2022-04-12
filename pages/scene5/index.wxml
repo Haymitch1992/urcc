@@ -62,7 +62,7 @@
         </view>
         <!-- 应急疏散的视频 -->
         <view class="show-video"   wx:if="{{showmap}}">
-            <txv-video  vid="h3330hzohra" playerid="txv1" autoplay="{{true}}"></txv-video>
+            <txv-video  vid="h33324ytudf" playerid="txv1" autoplay="{{true}}"></txv-video>
         </view>
     </view>
     <view class="btn-line">
