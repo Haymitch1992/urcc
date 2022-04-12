@@ -15,7 +15,8 @@
     bindtracked="tracked"
 />
 <view  wx:if="{{condition}}" class="page">
-  <view class="camera-status">
+  <view class="contetn-box">
+    <view class="camera-status">
     <view class="arrial-title">列车预计
     <text class="green-color">2min</text>
     后到达
@@ -59,10 +60,12 @@
     </view>
   </view>
   <view class="subway-map">
-    <view>
+    <view style="text-align: center;">
       <text class="btn" class="{{tab==1?'active btn':'btn'}}" bindtap="changeTab1">列车拥挤度</text>
       <text class="btn" class="{{tab==2?'active btn':'btn'}}"  bindtap="changeTab2">线网可达性</text>
     </view>
-    <canvas style="width: 100%;height: 400px;"  type="2d" id="myCanvas"></canvas>
+    <canvas style="width: 100%;height: 340px;"  type="2d" id="myCanvas"></canvas>
   </view>
+  </view>
+
 </view>

@@ -16,10 +16,7 @@
 />
 <!-- 应急疏散场景 -->
 <view class="camera-container"   wx:if="{{condition}}">    
-    <view class="btn-line">
-        <button bindtap="changeTab1">疏散线路</button>
-        <button bindtap="changeTab2">应急科普</button>
-    </view>
+
     <view>
         <!-- 疏散线路图 -->
         <view class="show-video"  wx:if="{{!showmap}}">
@@ -29,5 +26,9 @@
         <view class="show-video"   wx:if="{{showmap}}">
             <txv-video  vid="h3330hzohra" playerid="txv1" autoplay="{{true}}"></txv-video>
         </view>
+    </view>
+    <view class="btn-line">
+        <button bindtap="changeTab2">应急科普</button>
+        <button bindtap="changeTab1">疏散线路</button>
     </view>
 </view>

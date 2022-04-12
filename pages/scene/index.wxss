@@ -30,6 +30,9 @@ page {
   padding: 32rpx;
   margin: 0 auto ;
   background: rgba(255,255,255,.8);
+  position: absolute;
+  bottom: 200rpx;
+  left: 20rpx;
 }
 .speed-text{
   color: rgb(20, 255, 52);
@@ -48,7 +51,9 @@ page {
   font-size: 28rpx;
   position: relative;
   padding-left: 132rpx;
-  margin-bottom: 200rpx;
+  position: absolute;
+  bottom: 0;
+  left: 20rpx;
 }
 .exit-icon{
   width: 36rpx;

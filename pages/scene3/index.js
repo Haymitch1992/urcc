@@ -4,7 +4,7 @@ Page({
   data:{
     condition:false,
     speed:18,
-    showmap:false
+    showmap:true
   },
   goArlist(){
     wx.switchTab({ url: '/pages/ar/ar_list'});

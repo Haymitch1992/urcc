@@ -30,6 +30,10 @@ page {
   padding: 32rpx;
   margin: 20rpx auto;
   background: rgba(255,255,255,.8);
+  margin-top: 20vh;
+  position: absolute;
+  bottom: 150rpx;
+  left: 20rpx;
 }
 .speed-text{
   color: rgb(20, 255, 52);
@@ -49,6 +53,7 @@ page {
   position: relative;
   padding-left: 132rpx;
   margin-bottom: 200rpx;
+  height: 1200rpx;
 }
 .exit-icon{
   width: 36rpx;
@@ -77,11 +82,7 @@ page {
   text-align: center;
   font-size: 24rpx;
 }
-.btn-line{
-  background: rgba(0,0,0,.6);
-  text-align: center;
-  padding: 50rpx 0;
-}
+
 .btn-line button{
   display: inline-block;
   margin: 0 10rpx !important;
@@ -103,16 +104,22 @@ page {
   display: block;
 }
 .subway-line-container{
-  position: relative;
+  background: rgba(255,255,255,.8);
+  height: 1000rpx;
+  overflow: hidden;
 }
 .line{
-  height: 1200rpx;
+  height: 900rpx;
   width: 30rpx;
-  background: #0070ac;
+  background: #ed9166;
   border-radius: 20rpx;
   position: absolute;
   top: 0rpx;
   left: 200rpx;
+}
+.line-item-1{
+  left: 80rpx;
+  background: #0070ac;
 }
 .point{
   width: 30rpx;
@@ -124,18 +131,22 @@ page {
   top: 400rpx;
   left: 192rpx;
 }
+
 .point-item-1{
-  top: 400rpx;
+  top: -15rpx;
 }
 .point-item-2{
-  top: 940rpx;
+  top: 300rpx;
 }
 .point-item-3{
-  top: -15rpx;
+  top: 600rpx;
+}
+.point-item-4{
+  top: 870rpx;
 }
 .train-item-2{
   position: absolute;
-  top:400rpx;
+  top:480rpx;
   left:140rpx;
 }
 .train-item-1{
@@ -143,9 +154,13 @@ page {
   top:400rpx;
   left:140rpx;
 }
-.train-item-1 .train-icon3{
-  position: relative;
-  top:400rpx;
+.train-icon.train-icon3{
+  position: absolute ;
+  top:0rpx;
+}
+.train-icon.train-icon4{
+  position: absolute;
+  top:144rpx;
 }
 .station{
   background: #202c44;
@@ -166,8 +181,26 @@ page {
   top: -40rpx;
 }
 .station-item-2{
-  top: 360rpx;
+  top: 260rpx;
 }
 .station-item-3{
-  top: 900rpx;
+  top: 550rpx;
+}
+.station-item-4{
+  top: 800rpx;
+}
+.point.point-left{
+  left: 74rpx;
+}
+.btn-line{
+  background: rgba(255,255,255,.8);
+  margin: 32rpx auto;
+  text-align: center;
+  padding: 30rpx 0 20rpx;
+  width: calc(100% - 40rpx);
+  border-radius: 20rpx;
+  position: absolute;
+  bottom: 0;
+  left: 20rpx;
+  z-index: 200;
 }

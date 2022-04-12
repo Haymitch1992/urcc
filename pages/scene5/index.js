@@ -3,10 +3,11 @@ const { downloadSceneAsset, clearSceneCache } = requirePlugin("kivicube");
 Page({
   data:{
     condition:false,
-    showmap:false,
-    group:false,
-    trainTopNum:400,
-    trainTopNum2:400,
+    showmap:true,
+    group:true,
+    trainTopNum:900,
+    trainTopNum2:0,
+    trainTopNum3:144
   },
   goArlist(){
     wx.switchTab({ url: '/pages/ar/ar_list'});
@@ -15,43 +16,50 @@ Page({
   step1(){
     let num = this.data.trainTopNum
     let timer = setInterval(()=>{
-      if(num<=5){
+      if(num<=480){
         // 停止定时器
         clearInterval(timer)
         this.setData({
-          group:true,
-          trainTopNum:400,
+          group:false,
+          trainTopNum:900,
         })
-        this.step2()
+        setTimeout(()=>{
+          this.step2()
+        },2000)
+    
       }else{
         num -=5
         this.setData({
           trainTopNum:num,
         })
       }
-    },200)
+    },100)
   },
+
   step2(){
     let num = this.data.trainTopNum2
+    let num3 = this.data.trainTopNum3
     let timer2 = setInterval(()=>{
-      if(num<=5){
+      if(num<=-530){
         // 停止定时器
         clearInterval(timer2)
-      
         setTimeout(()=>{
           this.setData({
-            group:false,
-            trainTopNum2:400,
+            group:true,
+            trainTopNum2:0,
+            trainTopNum3:144,
           })
           this.step1()
-        },4000)
+        },2000)
       }else{
         num -=5
+        num3 -=3.5
         this.setData({
           trainTopNum2:num,
+          trainTopNum3:num3,
         })
       }
-    },200)
+    },100)
   },
   changeTab1(){
     this.setData({

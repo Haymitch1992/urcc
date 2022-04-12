@@ -30,6 +30,9 @@ page {
   padding: 32rpx;
   margin: 20rpx auto;
   background: rgba(255,255,255,.8);
+  position: absolute;
+  bottom: 150rpx;
+  left: 20rpx;
 }
 .speed-text{
   color: rgb(20, 255, 52);
@@ -48,7 +51,6 @@ page {
   font-size: 28rpx;
   position: relative;
   padding-left: 132rpx;
-  margin-bottom: 200rpx;
 }
 .exit-icon{
   width: 36rpx;
@@ -78,9 +80,15 @@ page {
   font-size: 24rpx;
 }
 .btn-line{
-  background: rgba(0,0,0,.6);
+  background: rgba(255,255,255,.8);
+  margin: 32rpx auto;
   text-align: center;
-  padding: 50rpx 0;
+  padding: 30rpx 0 20rpx;
+  width: calc(100% - 40rpx);
+  border-radius: 20rpx;
+  position: absolute;
+  bottom: 0;
+  left: 20rpx;
 }
 .btn-line button{
   display: inline-block;

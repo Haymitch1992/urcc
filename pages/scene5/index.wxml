@@ -16,39 +16,47 @@
 />
 <!-- 应急疏散场景 -->
 <view class="camera-container"  wx:if="{{condition}}">    
-    <view class="btn-line">
-        <button bindtap="changeTab1">协同编队</button>
-        <button bindtap="changeTab2">科普视频</button>
-    </view>
     <view>
         <!-- 疏散线路图 -->
-        <view  wx:if="{{!showmap}}">
-            <view class="subway-line-container">
+        <view class="show-video subway-line-container" wx:if="{{!showmap}}">
+            <view style="position: relative;top:20rpx;" >
                 <view class="line"></view>
+                <view class="line line-item-1"></view>
                 <view class="point point-item-1"></view>
                 <view class="point point-item-2"></view>
                 <view class="point point-item-3"></view>
+                <view class="point point-item-4"></view>
+                <view class="point point-item-1 point-left"></view>
+                <view class="point point-item-3  point-left"></view>
+                <view class="point point-item-4  point-left"></view>
                 <view class="station station-item-1">
-                    <view class="cn">新首钢</view>
-                    <view>Xin Shougang</view>
+                    <view class="cn">模式口</view>
+                    <view>Moshi Kou</view>
                 </view>
                 <view class="station station-item-2">
-                    <view class="cn">北辛安</view>
-                    <view>Beixin An</view>
-                </view>
-                <view class="station station-item-3">
                     <view class="cn">金安桥</view>
                     <view>Jin'an Qiao</view>
                 </view>
+                <view class="station station-item-3">
+                    <view class="cn">北辛安</view>
+                    <view>Beixin An</view>
+                </view>
+                <view class="station station-item-4">
+                    <view class="cn">新首钢</view>
+                    <view>Xin Shougang</view>
+                </view>
+            
+               
+       
                 <!-- 列车组合状态 -->
-                <view style="top:{{trainTopNum2+'rpx'}}" class="train-item train-item-2" wx:if="{{group}}">
+                <view style="top:{{trainTopNum+'rpx'}}" class="train-item train-item-2" wx:if="{{group}}">
                     <image class="train-icon" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/train-item-2.png/"></image>
                     <image class="train-icon" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/train-item-2.png/"></image>
                 </view>
                 <!-- 列车分离状态 -->
-                <view class="train-item train-item-1" wx:if="{{!group}}">
-                    <image  class="train-icon"  style src="https://www.wgjz.vip:30401/img/wx_image/ar_img/train-item-1.png/"></image>
-                    <image style="top:{{trainTopNum+'rpx'}}" class="train-icon train-icon3" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/train-item-1.png/"></image>
+                <view class="train-item  train-item-2" wx:if="{{!group}}">
+                    <image  style="top:{{trainTopNum2+'rpx'}}" class="train-icon train-icon3"   src="https://www.wgjz.vip:30401/img/wx_image/ar_img/train-item-1.png/"></image>
+                    <image  class="train-icon train-icon4"  style="top:{{trainTopNum3+'rpx'}}" src="https://www.wgjz.vip:30401/img/wx_image/ar_img/train-item-1.png/"></image>
                 </view>
             </view>
         </view>
@@ -56,5 +64,9 @@
         <view class="show-video"   wx:if="{{showmap}}">
             <txv-video  vid="h3330hzohra" playerid="txv1" autoplay="{{true}}"></txv-video>
         </view>
+    </view>
+    <view class="btn-line">
+        <button bindtap="changeTab2">科普视频</button>
+        <button bindtap="changeTab1">协同编队</button>
     </view>
 </view>
